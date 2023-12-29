@@ -1372,26 +1372,26 @@
   display: none;
   border: 1px solid #000;
 }
-#specials .button-section .button-container #special1:hover,
-#specials .button-section .button-container #special2:hover,
-#specials .button-section .button-container #special3:hover,
-#specials .button-section .button-container #special4:hover,
-#specials .button-section .button-container #special5:hover,
-#specials .button-section .button-container #special6:hover {
+#specials .button-section .button-container:hover #special1,
+#specials .button-section .button-container:hover #special2,
+#specials .button-section .button-container:hover #special3,
+#specials .button-section .button-container:hover #special4,
+#specials .button-section .button-container:hover #special5,
+#specials .button-section .button-container:hover #special6 {
   background-image: none;
   background-color: beige;
 }
-#specials .button-section .button-container #special1:hover p, #specials .button-section .button-container #special1:hover a,
-#specials .button-section .button-container #special2:hover p,
-#specials .button-section .button-container #special2:hover a,
-#specials .button-section .button-container #special3:hover p,
-#specials .button-section .button-container #special3:hover a,
-#specials .button-section .button-container #special4:hover p,
-#specials .button-section .button-container #special4:hover a,
-#specials .button-section .button-container #special5:hover p,
-#specials .button-section .button-container #special5:hover a,
-#specials .button-section .button-container #special6:hover p,
-#specials .button-section .button-container #special6:hover a {
+#specials .button-section .button-container:hover #special1 p, #specials .button-section .button-container:hover #special1 a,
+#specials .button-section .button-container:hover #special2 p,
+#specials .button-section .button-container:hover #special2 a,
+#specials .button-section .button-container:hover #special3 p,
+#specials .button-section .button-container:hover #special3 a,
+#specials .button-section .button-container:hover #special4 p,
+#specials .button-section .button-container:hover #special4 a,
+#specials .button-section .button-container:hover #special5 p,
+#specials .button-section .button-container:hover #special5 a,
+#specials .button-section .button-container:hover #special6 p,
+#specials .button-section .button-container:hover #special6 a {
   display: inline-block;
 }
 #specials .button-section .button-container .button::after {
@@ -1451,6 +1451,10 @@
   height: 6px;
   width: 100%;
   transition: all 0.3s ease;
+}
+
+#calendar {
+  padding: var(--sectionPadding);
 }
 
 /*# sourceMappingURL=root.css.map */

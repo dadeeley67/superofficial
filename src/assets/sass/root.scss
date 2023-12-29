@@ -1617,20 +1617,38 @@
               display: none;
               border: 1px solid #000;
             }
-            
-            #special1:hover,
-            #special2:hover,
-            #special3:hover,
-            #special4:hover,
-            #special5:hover,
-            #special6:hover {
-              background-image: none;
-              background-color: beige;
-            
-              p, a {
-                display: inline-block;
-              }
+
+            &:hover {
+                #special1,
+                #special2,
+                #special3,
+                #special4,
+                #special5,
+                #special6 {
+                  background-image: none;
+                  background-color: beige;
+                
+                  p, a {
+                    display: inline-block;
+                  }
+                }
+
+                
             }
+            
+            // #special1:hover,
+            // #special2:hover,
+            // #special3:hover,
+            // #special4:hover,
+            // #special5:hover,
+            // #special6:hover {
+            //   background-image: none;
+            //   background-color: beige;
+            
+            //   p, a {
+            //     display: inline-block;
+            //   }
+            // }
             
             .button::after {
                 z-index: -1;
@@ -1697,4 +1715,10 @@
             }
         }        
     }
+}
+
+// Calendar
+
+#calendar {
+    padding: var(--sectionPadding);
 }
