@@ -232,6 +232,166 @@
     box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
   }
 }
+@-webkit-keyframes scroll1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-moz-keyframes scroll1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-ms-keyframes scroll1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-o-keyframes scroll1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@-moz-keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@-ms-keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@-o-keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@-webkit-keyframes scroll1reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-moz-keyframes scroll1reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-ms-keyframes scroll1reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-o-keyframes scroll1reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes scroll1reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes scroll2reverse {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes scroll2reverse {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-ms-keyframes scroll2reverse {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-o-keyframes scroll2reverse {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes scroll2reverse {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -328,7 +488,8 @@
     font-family: "Roboto";
     font-weight: 400;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-700 - latin */
   @font-face {
@@ -336,7 +497,8 @@
     font-family: "Roboto";
     font-weight: 700;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-900 - latin */
   @font-face {
@@ -344,12 +506,13 @@
     font-family: "Roboto";
     font-weight: 900;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   body,
   html {
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: clip;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 100%;
@@ -504,6 +667,7 @@
     top: 2rem;
     left: 50%;
     transform: translateX(-50%);
+    border: 1px solid rgb(0, 0, 0);
     /* 12px - 24px */
     border-radius: clamp(0.75rem, 2vw, 1.5rem);
     background-color: var(--secondary);
@@ -755,6 +919,7 @@
 @media only screen and (max-width: 63.9375rem) {
   body.scroll #cs-navigation {
     top: 0;
+    border: 0;
     border-radius: 0;
     max-width: 100%;
     width: 100%;
@@ -923,6 +1088,7 @@
 @media only screen and (min-width: 64rem) {
   body.scroll #cs-navigation {
     top: 0;
+    border: 0;
     border-radius: 0;
     max-width: 100%;
     width: 100%;
@@ -935,6 +1101,7 @@
     transform: translateX(-50%);
     display: flex;
     align-items: center;
+    border: 1px solid rgb(0, 0, 0);
     /* 12px - 24px */
     border-radius: clamp(0.75rem, 2vw, 1.5rem);
     background-color: var(--secondary);
@@ -1638,7 +1805,8 @@
   background-image: none;
   background-color: beige;
 }
-#specials .button-section #special1:hover p, #specials .button-section #special1:hover a,
+#specials .button-section #special1:hover p,
+#specials .button-section #special1:hover a,
 #specials .button-section #special2:hover p,
 #specials .button-section #special2:hover a,
 #specials .button-section #special3:hover p,
