@@ -378,9 +378,6 @@
     height: auto;
     width: 1.5rem;
   }
-  #cs-navigation .cs-social {
-    display: none;
-  }
   #cs-navigation .cs-active .cs-line1 {
     top: 50%;
     transform: translate(-50%, -50%) rotate(225deg);
@@ -717,7 +714,7 @@
     align-items: center;
     /* 12px - 24px */
     border-radius: clamp(0.75rem, 2vw, 1.5rem);
-    background-color: var(--primary);
+    background-color: var(--secondary);
     height: 6rem;
     max-width: 90rem;
     width: 94%;
@@ -787,7 +784,6 @@
   #cs-navigation .cs-social {
     visibility: visible;
     opacity: 1;
-    display: none;
     justify-content: center;
     align-items: center;
     height: 2rem;
@@ -798,10 +794,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-color: #f7f7f7;
-    height: 2rem;
-    width: 2rem;
     text-decoration: none;
     transition: background-color 0.3s;
   }
@@ -816,7 +808,7 @@
     opacity: 0.6;
     display: block;
     height: auto;
-    width: 0.75rem;
+    width: 2rem;
     transition: opacity 0.3s;
   }
   #cs-navigation .cs-ul-wrapper {
@@ -909,6 +901,11 @@
     display: flex;
   }
 }
+.second-color {
+  background-color: #b8a5bc !important;
+  transition: all 1s ease-in-out;
+}
+
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
@@ -1330,12 +1327,14 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  margin: auto;
   margin-bottom: 2em;
+  max-width: 80rem;
 }
 #specials .button-section .button-container {
   position: relative;
   border: 1px solid black;
-  margin-bottom: 1em;
+  margin: 1em;
   height: 20rem;
   width: 20rem;
 }
@@ -1455,6 +1454,10 @@
 
 #calendar {
   padding: var(--sectionPadding);
+}
+#calendar .calendar-container {
+  margin: auto;
+  max-width: 80rem;
 }
 
 /*# sourceMappingURL=root.css.map */

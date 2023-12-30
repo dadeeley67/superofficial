@@ -464,9 +464,9 @@
             width: calc(24 / 16 * 1rem);
         }
 
-        .cs-social {
-            display: none;
-        }
+        // .cs-social {
+        //     display: none;
+        // }
 
         .cs-active {
             .cs-line1 {
@@ -861,7 +861,7 @@
         align-items: center;
         /* 12px - 24px */
         border-radius: clamp(0.75rem, 2vw, 1.5rem);
-        background-color: var(--primary);
+        background-color: var(--secondary);
         height: calc(96 / 16 * 1rem);
         max-width: calc(1440 / 16 * 1rem);
         width: 94%;
@@ -938,7 +938,7 @@
         .cs-social {
             visibility: visible;
             opacity: 1;
-            display: none;
+            // display: none;
             justify-content: center;
             align-items: center;
             height: calc(32 / 16 * 1rem);
@@ -950,10 +950,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 50%;
-            background-color: #f7f7f7;
-            height: calc(32 / 16 * 1rem);
-            width: calc(32 / 16 * 1rem);
+            // border-radius: 50%;
+            // background-color: #f7f7f7;
+            // height: calc(32 / 16 * 1rem);
+            // width: calc(32 / 16 * 1rem);
             text-decoration: none;
             transition: background-color 0.3s;
 
@@ -971,7 +971,7 @@
             opacity: 0.6;
             display: block;
             height: auto;
-            width: calc(12 / 16 * 1rem);
+            width: calc(12 / 6 * 1rem);
             transition: opacity 0.3s;
         }
 
@@ -1077,7 +1077,11 @@
         }
     }
 }
-                                
+
+.second-color {
+    background-color: #b8a5bc !important;
+    transition: all 1s ease-in-out;
+}
 
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
@@ -1570,12 +1574,14 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+        margin: auto;
         margin-bottom: 2em;
+        max-width: 80rem;
 
         .button-container {
             position: relative;
             border: 1px solid black;
-            margin-bottom: 1em;
+            margin: 1em;
             height: 20rem;
             width: 20rem;
         
@@ -1721,4 +1727,9 @@
 
 #calendar {
     padding: var(--sectionPadding);
+
+    .calendar-container {
+        margin: auto;
+        max-width: 80rem;
+    }
 }

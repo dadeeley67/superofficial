@@ -11,6 +11,11 @@ CShamburgerMenu.addEventListener('click', function () {
 	ariaExpanded();
 });
 
+// Change color of nav bar on scroll
+// window.addEventListener('scroll', () => {
+
+// });
+
 // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not 
 function ariaExpanded() {
 	const csUL = document.querySelector('#cs-expanded');
@@ -33,6 +38,12 @@ document.addEventListener('scroll', (e) => {
 		document.querySelector('body').classList.add('scroll')
 	} else {
 		document.querySelector('body').classList.remove('scroll')
+	}
+
+	if (scroll >= 1000) {
+		CSnavbarMenu.classList.add("second-color");
+	} else {
+		CSnavbarMenu.classList.remove("second-color");
 	}
 });
 
