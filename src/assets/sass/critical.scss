@@ -17,10 +17,8 @@
         overflow: hidden;
         /* 116px - 164px top */
         /* 60px - 100px  bottom */
-        padding: clamp(7.25rem, 16.82vw, 10.25rem) calc(16 / 16 * 1rem)
+        padding: clamp(7.25rem, 10.82vw, 10.25rem) calc(16 / 16 * 1rem)
             clamp(3.75rem, 7.82vw, 6.25rem);
-
-            padding-top: 16rem;
 
         .cs-container {
             display: flex;
@@ -161,10 +159,6 @@
             width: 320%;
         }
     }
-}
-
-@keyframes spin-hands {
-    to { transform: rotate(45deg) }
 }
 
 /* Small Desktop - 1024px */
@@ -314,15 +308,19 @@
 }
 
 /* Infinite Element Scroll */
+#banner {
+    padding-top: 16em;
+}
+
 .scroll-banner {
-    position: relative;
     display: flex;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     background-color: #8dcac6;
+    height: 54px;
     width: 100%;
     overflow: hidden;
-    --time: 25s;
+    --time: 20s;
 
     .scroll-content {
         white-space: nowrap;
@@ -338,16 +336,6 @@
     .scroll-content:nth-child(2) {
         animation: scroll2 var(--time) linear infinite;
         animation-delay: calc(var(--time)/-2);
-    }
-
-    .scroll-content span {
-        display: inline-flex;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 5px 10px;
-        letter-spacing: 0.2em;
-        color: #fff;
-        transition: 0.5s;
     }
 
     @keyframes scroll {
@@ -371,3 +359,9 @@
     }
 }
 
+.scroll-banner.fixed {
+    z-index: 9999;
+    position: fixed;
+    top: 6em;
+    margin-top: 0;
+  }

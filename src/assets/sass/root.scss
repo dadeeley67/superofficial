@@ -1,5 +1,8 @@
 /* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
 
+/* Import animations */
+@import "animations.scss";
+
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -344,6 +347,7 @@
         transform: translateX(-50%);
         /* 12px - 24px */
         border-radius: clamp(0.75rem, 2vw, 1.5rem);
+        background-color: var(--secondary);
         max-width: calc(1280 / 16 * 1rem);
         width: 94%;
         /* prevents padding from affecting height and width */
@@ -352,23 +356,23 @@
         padding: clamp(0.75rem, 2vw, 1.5rem);
         transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
 
-        &:before {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            /* background color */
-            content: "";
-            opacity: 1;
-            transform: translateX(-50%);
-            display: block;
-            /* 12px - 24px */
-            border-radius: clamp(0.75rem, 2vw, 1.5rem);
-            background: var(--primary);
-            height: 100%;
-            width: 100%;
-            transition: transform 0.2s, border-radius 0.3s ease-in-out;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        }
+        // &:before {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 50%;
+        //     /* background color */
+        //     content: "";
+        //     opacity: 1;
+        //     transform: translateX(-50%);
+        //     display: block;
+        //     /* 12px - 24px */
+        //     border-radius: clamp(0.75rem, 2vw, 1.5rem);
+        //     background-color: var(--secondary);
+        //     height: 100%;
+        //     width: 100%;
+        //     transition: transform 0.2s, border-radius 0.3s ease-in-out;
+        //     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        // }
 
         &.cs-active {
             &:before {
@@ -649,6 +653,15 @@
 
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
+    body.scroll {
+        #cs-navigation {
+            top: 0;
+            border-radius: 0;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    
     #cs-navigation {
         .cs-li {
             display: block;
@@ -869,7 +882,7 @@
         box-sizing: border-box;
         /* 12px - 24px */
         padding: clamp(0.75rem, 2vw, 1.5rem) 0;
-        transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+        transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s, background-color .2s ease-in-out;;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
@@ -1079,9 +1092,45 @@
 }
 
 .second-color {
-    background-color: #b8a5bc !important;
-    transition: all 1s ease-in-out;
+    background-color: #95C3C3 !important;
 }
+
+.third-color {
+    background-color: #9EBCC1 !important;
+}
+
+.fourth-color {
+    background-color: #A6B4C0 !important;
+}
+
+.fifth-color {
+    background-color: #AEADBE !important;
+}
+
+.sixth-color {
+    background-color: #B7A6BC !important;
+}
+
+.seventh-color {
+    background-color: #BF9FBA !important;
+}
+
+.eigth-color {
+    background-color: #C898B8 !important;
+}
+
+.ninth-color {
+    background-color: #D091B6 !important;
+}
+
+.tenth-color {
+    background-color: #D889B5 !important;
+}
+
+.eleventh-color {
+    background-color: #E182B3 !important;
+}
+
 
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
@@ -1568,7 +1617,7 @@
 
 // Specials styles
 #specials {
-    padding: var(--sectionPadding);
+    padding: 1rem1rem;
 
     .button-section {
         display: flex;
@@ -1578,19 +1627,27 @@
         margin-bottom: 2em;
         max-width: 80rem;
 
-        .button-container {
-            position: relative;
-            border: 1px solid black;
-            margin: 1em;
-            height: 20rem;
-            width: 20rem;
+        // .button-container {
+            // position: relative;
+            // border: 1px solid black;
+            // margin: 1em;
+            // height: 20rem;
+            // width: 20rem;
         
             .button {
-                position: absolute;
+                position: relative;
+                border: 1px solid black;
+                margin: 1em;
+                // position: absolute;
                 background-size: contain;
-                min-height: 100%;
-                min-width: 100%;
+                height: 20rem;
+                width: 20rem;
+                animation: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 reverse both running shadow-pop-br-out;
                 text-align: center;
+            }
+
+            .button.shadow-pop-br:hover {
+                animation: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 normal both running shadow-pop-br-in;
             }
             
             #special1 {
@@ -1613,6 +1670,25 @@
             #special6 {
                 background-image: url("/assets/images/specials/winter_pt_1/Brown_Cardigan_2023.png");
             }
+
+            #special1,
+            #special2,
+            #special3,
+            #special4,
+            #special5,
+            #special6 {
+                transition: .3s ease-in-out;
+                transition-property: background-color;
+
+                &:hover {
+                    background-image: none;
+                    background-color: beige;
+                  
+                    p, a {
+                      display: inline-block;
+                    }
+              }
+            }
             
             .button p {
               display: none;
@@ -1622,104 +1698,7 @@
             .button a {
               display: none;
               border: 1px solid #000;
-            }
-
-            &:hover {
-                #special1,
-                #special2,
-                #special3,
-                #special4,
-                #special5,
-                #special6 {
-                  background-image: none;
-                  background-color: beige;
-                
-                  p, a {
-                    display: inline-block;
-                  }
-                }
-
-                
-            }
-            
-            // #special1:hover,
-            // #special2:hover,
-            // #special3:hover,
-            // #special4:hover,
-            // #special5:hover,
-            // #special6:hover {
-            //   background-image: none;
-            //   background-color: beige;
-            
-            //   p, a {
-            //     display: inline-block;
-            //   }
-            // }
-            
-            .button::after {
-                z-index: -1;
-                position: absolute;
-                bottom: -1px;
-                left: -1px;
-                content: '';
-                display: inline-block;
-                border: 1px solid #000;
-                background-color: #000;
-                height: 100%;
-                width: 100%;
-                transition: all .3s ease;
-            }
-            
-            .button:hover::after {
-                bottom: -4px;
-                left: 100%;
-                transform: skewY(34deg);
-                height: 100%;
-                width: 4px;
-                transition: all .3s ease;
-            }
-            
-            .button::before {
-                z-index: -1;
-                position: absolute;
-                bottom: -1px;
-                right: -1px;
-                content: '';
-                display: inline-block;
-                border: 1px solid #000;
-                background-color: #000;
-                height: 100%;
-                width: 100%;
-                transition: all .3s ease;
-            }
-            
-            .button:hover::before {
-                bottom: -6px;
-                right: -4px;
-                transform: skewX(34deg);
-                height: 4px;
-                width: 100%;
-                transition: all .3s ease;
-            }
-            
-            .button.thick:hover::after {
-                bottom: -5px;
-                left: 100%;
-                transform: skewY(30deg);
-                height: 100%;
-                width: 8px;
-                transition: all .3s ease;
-            }
-            
-            .button.thick:hover::before {
-                bottom: -8px;
-                right: -6px;
-                transform: skewX(44deg);
-                height: 6px;
-                width: 100%;
-                transition: all .3s ease;
-            }
-        }        
+            }     
     }
 }
 
