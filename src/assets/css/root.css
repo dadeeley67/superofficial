@@ -1603,22 +1603,22 @@
   animation: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 normal both running shadow-pop-br-in;
 }
 #specials .button-section #special1 {
-  background-image: url("/assets/images/specials/winter_pt_1/Peppermint_Mocha.png");
+  background-image: url("/assets/images/specials/winter_pt_1/opt/Peppermint_Mocha.webp");
 }
 #specials .button-section #special2 {
-  background-image: url("/assets/images/specials/winter_pt_1/Chocolate_Orange.png");
+  background-image: url("/assets/images/specials/winter_pt_1/opt/Chocolate_Orange.webp");
 }
 #specials .button-section #special3 {
-  background-image: url("/assets/images/specials/winter_pt_1/Toasted_Marshmallow_Match.png");
+  background-image: url("/assets/images/specials/winter_pt_1/opt/Toasted_Marshmallow_Match.webp");
 }
 #specials .button-section #special4 {
-  background-image: url("/assets/images/specials/winter_pt_1/Nutcracker_Firecracker.PNG");
+  background-image: url("/assets/images/specials/winter_pt_1/opt/Nutcracker_Firecracker.webp");
 }
 #specials .button-section #special5 {
-  background-image: url("/assets/images/specials/winter_pt_1/Cranberry_Cookie_Square.png");
+  background-image: url("/assets/images/specials/winter_pt_1/opt/Cranberry_Cookie_Square.webp");
 }
 #specials .button-section #special6 {
-  background-image: url("/assets/images/specials/winter_pt_1/Brown_Cardigan_2023.png");
+  background-image: url("/assets/images/specials/winter_pt_1/opt/Brown_Cardigan_2023.webp");
 }
 #specials .button-section #special1,
 #specials .button-section #special2,
