@@ -17,8 +17,8 @@
         overflow: hidden;
         /* 116px - 164px top */
         /* 60px - 100px  bottom */
-        padding: clamp(7.25rem, 10.82vw, 10.25rem) calc(16 / 16 * 1rem)
-            clamp(3.75rem, 7.82vw, 6.25rem);
+        // padding: clamp(7.25rem, 10.82vw, 10.25rem) calc(16 / 16 * 1rem)
+        //     clamp(3.75rem, 7.82vw, 6.25rem);
 
         .cs-container {
             display: flex;
@@ -165,6 +165,7 @@
 @media only screen and (min-width: 64rem) {
     #hero-856 {
         text-align: left;
+
         .cs-container {
             flex-direction: row;
             justify-content: space-between;
@@ -197,7 +198,7 @@
         }
     }
 }
-                                
+
 
 /*-- -------------------------- -->
 <---          Services          -->
@@ -218,12 +219,14 @@
         width: 90%;
         padding: calc(50 / 16 * 1em) calc(20 / 16 * 1em);
         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+
         .card {
             display: block;
             margin: auto;
             margin-bottom: calc(50 / 16 * 1em);
             max-width: calc(357 / 16 * 1em);
             width: 100%;
+
             &:last-of-type {
                 margin-bottom: 0;
             }
@@ -244,6 +247,7 @@
                     width: calc(48 / 16 * 1em);
                 }
             }
+
             h2 {
                 margin-bottom: calc(13 / 20 * 1em);
                 font-size: calc(32 / 16 * 1em);
@@ -252,6 +256,7 @@
                 color: #1a1a1a;
                 text-align: center;
             }
+
             p {
                 opacity: 0.7;
                 width: 100%;
@@ -307,61 +312,85 @@
     }
 }
 
-/* Infinite Element Scroll */
-#banner {
-    padding-top: 16em;
+@media only screen and (min-width: 0em) {
+
+    #banner,
+    #specials-banner,
+    #events-banner {
+        z-index: 2;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 121.36px;
+    }
+
+    #banner {
+        .scroll-banner {
+            background-color: #8dcac6;
+        }
+    }
+
+    #specials-banner {
+        margin-bottom: 8em;
+
+        .scroll-banner {
+            background-color: var(--primary);
+
+            .scroll-content {
+                animation: scroll1reverse var(--time) linear infinite;
+                animation-delay: calc(var(--time)*-1);
+            }
+
+            .scroll-content:nth-child(2) {
+                animation: scroll2reverse var(--time) linear infinite;
+                animation-delay: calc(var(--time)/-2);
+            }
+        }
+    }
+
+    #events-banner {
+        margin: 4em 0;
+
+        .scroll-banner {
+            background-color: #8dcac6;
+        }
+    }
+
+    .scroll-banner {
+        display: flex;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        height: 54px;
+        width: 100%;
+        overflow: hidden;
+        --time: 35s;
+
+        .scroll-content {
+            white-space: nowrap;
+            animation: scroll1 var(--time) linear infinite;
+            animation-delay: calc(var(--time)*-1);
+
+            .pic {
+                margin: .5em;
+                vertical-align: middle;
+            }
+        }
+
+        .scroll-content:nth-child(2) {
+            animation: scroll2 var(--time) linear infinite;
+            animation-delay: calc(var(--time)/-2);
+        }
+    }
 }
 
-.scroll-banner {
-    display: flex;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    background-color: #8dcac6;
-    height: 54px;
-    width: 100%;
-    overflow: hidden;
-    --time: 20s;
+@media only screen and (min-width: 1024px) {
 
-    .scroll-content {
-        white-space: nowrap;
-        animation: scroll var(--time) linear infinite;
-        animation-delay: calc(var(--time)*-1);
-
-        .pic {
-            margin: .5em;
-            vertical-align: middle;
-        }
-    }
-
-    .scroll-content:nth-child(2) {
-        animation: scroll2 var(--time) linear infinite;
-        animation-delay: calc(var(--time)/-2);
-    }
-
-    @keyframes scroll {
-        0% {
-            transform: translateX(100%);
-        }
-    
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-    
-    @keyframes scroll2 {
-        0% {
-            transform: translateX(0);
-        }
-    
-        100% {
-            transform: translateX(-200%);
-        }
+    #banner,
+    #specials-banner,
+    #events-banner {
+        top: 6rem;
     }
 }
 
-.scroll-banner.fixed {
-    z-index: 9999;
-    position: fixed;
-    top: 6em;
-    margin-top: 0;
-  }
+#spacer {
+    padding: 7.5em 0;
+}
