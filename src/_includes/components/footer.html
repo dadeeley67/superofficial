@@ -5,10 +5,11 @@
 <footer id="footer">
     <div class="container">
         <div class="left-section">
-            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/logo_white.png" alt="logo" width="264" height="78"></a>
-            <p>
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/logo_white.png" alt="logo"
+                    width="264" height="78"></a>
+            {# <p>
                 Extra content if you need it, if not you can delete this whole p tag. I usually do.
-            </p>
+            </p> #}
         </div>
         <div class="right-section">
             <div class="lists">
@@ -17,36 +18,39 @@
                         <h2>Information</h2>
                     </li>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">home</a>
                     </li>
                     <li>
-                        <a href="/about">About Us</a>
+                        <a href="/about">our crew</a>
                     </li>
                     <li>
-                        <a href="/projects">Projects</a>
+                        <a href="/projects">our parties</a>
                     </li>
                     <li>
-                        <a href="/testimonials">Reviews</a>
+                        <a href="/reviews">reviews</a>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a href="/calendar">calendar</a>
+                    </li>
+                    <li>
+                        <a href="/contact">contact</a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <h2>Services</h2>
+                        <h2>Hours</h2>
                     </li>
-                    <li>Service1</li>
-                    <li>Service2</li>
-                    <li>Service4</li>
-                    <li>Service5</li>
+                    <li>Tuesday - Friday</li>
+                    <li>7am - 4pm</li>
+                    <li>Saturday & Sunday</li>
+                    <li>9am - 3pm</li>
                 </ul>
                 <ul>
                     <li>
                         <h2>Contact</h2>
                     </li>
                     <li>
-                        <a href="/contact">
+                        <a href="{{client.address.mapLink}}">
                             {{client.address.lineOne}}<br>
                             {{client.address.lineTwo}}<br>
                             {{client.address.city}}
@@ -69,9 +73,10 @@
     </div>
 
     <div class="credit">
-        <span>Designed and Hand Coded by</span>
-        <a href="/" target="_blank" rel="noopener">Your Company Name</a>
-        <span class="copyright">
-            Copyright 2023 - Present</span>
+        <p>Designed and Hand Coded by</p>
+        <a href="https://www.cardinalcreations.dev" target="_blank" rel="noopener">Cardinal Creations</a>
+        <p class="copyright">
+            Copyright © 2023 - Present
+        </p>
     </div>
 </footer>

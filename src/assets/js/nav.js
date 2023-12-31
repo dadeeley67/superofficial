@@ -3,6 +3,7 @@ var CSbody = document.querySelector("body");
 const CSnavbarMenu = document.querySelector("#cs-navigation");
 const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
 const banner = document.querySelector(".scroll-banner");
+const activeLink = document.querySelector(".cs-active");
 
 var containerRect = CSnavbarMenu.getBoundingClientRect();
 
@@ -13,11 +14,6 @@ CShamburgerMenu.addEventListener('click', function () {
 	// run the function to check the aria-expanded value
 	ariaExpanded();
 });
-
-// Change color of nav bar on scroll
-// window.addEventListener('scroll', () => {
-
-// });
 
 // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not 
 function ariaExpanded() {
@@ -71,8 +67,10 @@ document.addEventListener('scroll', (e) => {
 		CSnavbarMenu.style.backgroundColor = "#A6B4C0";
 	} else if (scroll >= step5 && scroll < step6) {
 		CSnavbarMenu.style.backgroundColor = "#AEADBE";
+		activeLink.style.color = "#e97bb1"
 	} else if (scroll >= step6 && scroll < step7) {
 		CSnavbarMenu.style.backgroundColor = "#B7A6BC";
+		activeLink.style.color = "#8dcac5"
 	} else if (scroll >= step7 && scroll < step8) {
 		CSnavbarMenu.style.backgroundColor = "#BF9FBA";
 	} else if (scroll >= step8 && scroll < step9) {
