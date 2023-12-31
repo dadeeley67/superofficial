@@ -117,6 +117,8 @@
 
         .cs-picture {
             position: relative;
+            // box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
+            transform: rotate(-45deg);
             display: block;
             /* 100px - 200px */
             // border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0
@@ -127,13 +129,11 @@
             width: 100%;
             /* clips the img tag corners */
             overflow: hidden;
-            // box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
 
             img {
                 position: absolute;
                 top: 0;
                 left: 0;
-                transform: rotate(-45deg);
                 height: 100%;
                 width: 100%;
                 /* makes image act as a background image */
@@ -141,10 +141,10 @@
                 /* ensures the top of the images is at the top of the container, no heads getting cut off */
                 object-position: top;
             }
+        }
 
-            img.rotate-scale-up {
-                @include animation('rotate-scale-up .65s linear');
-            }
+        .cs-picture.rotate-scale-up {
+            @include animation('rotate-scale-up .65s linear');
         }
 
         .cs-wave {
@@ -185,10 +185,10 @@
             text-align: left;
         }
 
-        .cs-picture {
+        // .cs-picture {
             /* 623px - 814px */
-            height: clamp(38.9375rem, 60vw, 50.875rem);
-        }
+        //     height: clamp(38.9375rem, 60vw, 50.875rem);
+        // }
 
         .cs-wave {
             left: 0;

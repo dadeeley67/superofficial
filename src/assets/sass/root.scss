@@ -45,7 +45,7 @@
 
     .cs-title {
         position: relative;
-        margin: 0 0 1rem 0;
+        margin: 0 auto;
         max-width: 43.75rem;
         font-size: var(--headerFontSize);
         line-height: 1.2em;
@@ -55,7 +55,7 @@
     }
 
     .cs-text {
-        margin: 0;
+        margin: 0 auto;
         max-width: 40.625rem;
         width: 100%;
         font-size: var(--bodyFontSize);
@@ -69,11 +69,12 @@
         z-index: 1;
         position: relative;
         display: inline-block;
+        border: 1px solid #000;
         background-color: var(--primary);
         width: auto;
         padding: 0 calc(30 / 16 * 1rem);
         text-decoration: none;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         font-size: calc(16 / 16 * 1rem);
         line-height: calc(50 / 16 * 1em);
         font-weight: bold;
@@ -664,7 +665,7 @@
 @media only screen and (min-width: 48rem) {
     #cs-navigation {
         .cs-contact-group {
-            display: block;
+            display: none;
         }
     }
 }
@@ -919,7 +920,6 @@
         /* 12px - 24px */
         padding: clamp(0.75rem, 2vw, 1.5rem) 0;
         transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s, background-color .2s ease-in-out;
-        ;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
@@ -1073,8 +1073,13 @@
             }
 
             &.cs-active {
+                text-decoration: underline wavy;
                 color: var(--primary);
             }
+        }
+
+        .mobile-only {
+            display: none;
         }
 
         .cs-button-solid {
@@ -1536,7 +1541,7 @@
 
         .credit {
             margin: auto;
-            margin-top: calc(100 / 16 * 1rem);
+            margin-top: calc(100 / 20 * 1rem);
             width: 96%;
             font-size: calc(16 / 16 * 1rem);
             line-height: calc(36 / 16 * 1rem);

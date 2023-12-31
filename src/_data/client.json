@@ -1,15 +1,15 @@
 {
     "name": "superofficial",
     "email": "howdy@superofficialdrinksetc.com",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "phoneForTel": "315-617-8924",
+    "phoneFormatted": "(315) 617-8924",
     "address": {
         "lineOne": "216 W Dominick St",
         "lineTwo": "Second Address Line",
         "city": "Rome",
         "state": "NY",
         "zip": "13440",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "mapLink": "https://maps.app.goo.gl/m4YfZ3FH1vERBPcEA"
     },
     "domain": "https://www.codestitch.app"
 }
