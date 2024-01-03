@@ -392,6 +392,36 @@
     transform: translateX(0);
   }
 }
+@-webkit-keyframes fade-in {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@-ms-keyframes fade-in {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@-o-keyframes fade-in {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -1750,7 +1780,7 @@
   }
 }
 #specials {
-  padding: 1rem1rem;
+  padding: 1rem 1rem;
 }
 #specials .button-section {
   display: flex;
@@ -1760,7 +1790,14 @@
   margin-bottom: 2em;
   max-width: 80rem;
 }
-#specials .button-section .button {
+#specials .button-section .button-container {
+  opacity: 0;
+  animation: fade-in linear forwards;
+  scale: 0.8;
+  animation-timeline: view();
+  animation-range: 150px 350px;
+}
+#specials .button-section .button-container .button {
   position: relative;
   border: 1px solid black;
   margin: 1em;
@@ -1770,64 +1807,64 @@
   animation: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 reverse both running shadow-pop-br-out;
   text-align: center;
 }
-#specials .button-section .button.shadow-pop-br:hover {
+#specials .button-section .button-container .button.shadow-pop-br:hover {
   animation: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 normal both running shadow-pop-br-in;
 }
-#specials .button-section #special1 {
+#specials .button-section .button-container #special1 {
   background-image: url("/assets/images/specials/winter_pt_1/opt/Peppermint_Mocha.webp");
 }
-#specials .button-section #special2 {
+#specials .button-section .button-container #special2 {
   background-image: url("/assets/images/specials/winter_pt_1/opt/Chocolate_Orange.webp");
 }
-#specials .button-section #special3 {
+#specials .button-section .button-container #special3 {
   background-image: url("/assets/images/specials/winter_pt_1/opt/Toasted_Marshmallow_Match.webp");
 }
-#specials .button-section #special4 {
+#specials .button-section .button-container #special4 {
   background-image: url("/assets/images/specials/winter_pt_1/opt/Nutcracker_Firecracker.webp");
 }
-#specials .button-section #special5 {
+#specials .button-section .button-container #special5 {
   background-image: url("/assets/images/specials/winter_pt_1/opt/Cranberry_Cookie_Square.webp");
 }
-#specials .button-section #special6 {
+#specials .button-section .button-container #special6 {
   background-image: url("/assets/images/specials/winter_pt_1/opt/Brown_Cardigan_2023.webp");
 }
-#specials .button-section #special1,
-#specials .button-section #special2,
-#specials .button-section #special3,
-#specials .button-section #special4,
-#specials .button-section #special5,
-#specials .button-section #special6 {
+#specials .button-section .button-container #special1,
+#specials .button-section .button-container #special2,
+#specials .button-section .button-container #special3,
+#specials .button-section .button-container #special4,
+#specials .button-section .button-container #special5,
+#specials .button-section .button-container #special6 {
   transition: 0.3s ease-in-out;
   transition-property: background-color;
 }
-#specials .button-section #special1:hover,
-#specials .button-section #special2:hover,
-#specials .button-section #special3:hover,
-#specials .button-section #special4:hover,
-#specials .button-section #special5:hover,
-#specials .button-section #special6:hover {
+#specials .button-section .button-container #special1:hover,
+#specials .button-section .button-container #special2:hover,
+#specials .button-section .button-container #special3:hover,
+#specials .button-section .button-container #special4:hover,
+#specials .button-section .button-container #special5:hover,
+#specials .button-section .button-container #special6:hover {
   background-image: none;
   background-color: beige;
 }
-#specials .button-section #special1:hover p,
-#specials .button-section #special1:hover a,
-#specials .button-section #special2:hover p,
-#specials .button-section #special2:hover a,
-#specials .button-section #special3:hover p,
-#specials .button-section #special3:hover a,
-#specials .button-section #special4:hover p,
-#specials .button-section #special4:hover a,
-#specials .button-section #special5:hover p,
-#specials .button-section #special5:hover a,
-#specials .button-section #special6:hover p,
-#specials .button-section #special6:hover a {
+#specials .button-section .button-container #special1:hover p,
+#specials .button-section .button-container #special1:hover a,
+#specials .button-section .button-container #special2:hover p,
+#specials .button-section .button-container #special2:hover a,
+#specials .button-section .button-container #special3:hover p,
+#specials .button-section .button-container #special3:hover a,
+#specials .button-section .button-container #special4:hover p,
+#specials .button-section .button-container #special4:hover a,
+#specials .button-section .button-container #special5:hover p,
+#specials .button-section .button-container #special5:hover a,
+#specials .button-section .button-container #special6:hover p,
+#specials .button-section .button-container #special6:hover a {
   display: inline-block;
 }
-#specials .button-section .button p {
+#specials .button-section .button-container .button p {
   display: none;
   padding: 1em;
 }
-#specials .button-section .button a {
+#specials .button-section .button-container .button a {
   display: none;
   border: 1px solid #000;
 }
@@ -1836,8 +1873,13 @@
   padding: var(--sectionPadding);
 }
 #calendar .calendar-container {
+  opacity: 0;
   margin: auto;
   max-width: 80rem;
+  animation: fade-in linear forwards;
+  scale: 0.8;
+  animation-timeline: view();
+  animation-range: 150px 350px;
 }
 
 /*# sourceMappingURL=root.css.map */
