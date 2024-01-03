@@ -598,11 +598,22 @@
             }
         }
 
-        .cs-item-img {
+        .profile {
             position: absolute;
-            top: calc(-40 / 16 * 1rem);
-            height: calc(80 / 16 * 1rem);
-            width: calc(80 / 16 * 1rem);
+            top: calc(-51 / 16 * 1rem);
+            left: calc(30 / 16 * 1rem);
+            display: block;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-bottom: calc(16 / 16 * 1rem);
+            margin-left: 0;
+            background-color: var(--primary);
+            height: calc(99 / 16 * 1rem);
+            width: calc(99 / 16 * 1rem);
+            font-size: 2rem;
+            line-height: calc(99 / 16 * 1rem);
+            color: var(--secondary);
+            text-align: center;
         }
 
         .cs-item-p {

@@ -1,8 +1,5 @@
 /* PAGE-SPECIFIC STYLES FOR THE PROJECTS PAGE */
 
-/* Import animations */
-@import "animations.scss";
-
 /*-- -------------------------- -->
 <---          Gallery           -->
 <--- -------------------------- -*/
@@ -11,15 +8,21 @@
 @media only screen and (min-width: 0em) {
     #gallery {
         position: relative;
+        margin-top: 8rem;
         /* Prevents overflow from the image going off screen */
         overflow: hidden;
         padding: var(--sectionPadding);
         /* Centers button */
         text-align: center;
+
         .cs-container {
             margin: auto;
             max-width: calc(1322 / 16 * 1em);
             width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
         }
 
         .cs-image-group {
@@ -51,14 +54,9 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                opacity: 0;
                 height: 100%;
                 width: 100%;
                 object-fit: contain;
-                animation: fade-in linear forwards;
-                scale: .8;
-                animation-timeline: view();
-                animation-range: 150px 350px;
             }
         }
 
