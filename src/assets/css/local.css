@@ -386,7 +386,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   #gallery .cs-row-1 .cs-picture1 {
     height: 35.4375em;
@@ -490,11 +490,22 @@
   #reviews .cs-item:last-of-type {
     margin-bottom: 0;
   }
-  #reviews .cs-item-img {
+  #reviews .profile {
     position: absolute;
-    top: -2.5rem;
-    height: 5rem;
-    width: 5rem;
+    top: -3.1875rem;
+    left: 1.875rem;
+    display: block;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    background-color: var(--primary);
+    height: 6.1875rem;
+    width: 6.1875rem;
+    font-size: 2rem;
+    line-height: 6.1875rem;
+    color: var(--secondary);
+    text-align: center;
   }
   #reviews .cs-item-p {
     border-bottom: 1px solid #e8e9ec;
