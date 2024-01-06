@@ -12,13 +12,7 @@
     #hero-856 {
         z-index: 1;
         position: relative;
-        // background-color: #f7f7f7;
-        /* clips the svg wave from overflowing */
         overflow: hidden;
-        /* 116px - 164px top */
-        /* 60px - 100px  bottom */
-        // padding: clamp(7.25rem, 10.82vw, 10.25rem) calc(16 / 16 * 1rem)
-        //     clamp(3.75rem, 7.82vw, 6.25rem);
 
         .cs-container {
             display: flex;
@@ -312,13 +306,8 @@
     }
 }
 
-.spacer {
-    padding: 7.5em 0;
-}
-
 #calendar {
     position: relative;
-    // margin-top: 8rem;
     overflow: hidden;
     padding: var(--sectionPadding);
     text-align: center;

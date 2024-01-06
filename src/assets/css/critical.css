@@ -430,10 +430,7 @@
   #hero-856 {
     z-index: 1;
     position: relative;
-    /* clips the svg wave from overflowing */
     overflow: hidden;
-    /* 116px - 164px top */
-    /* 60px - 100px  bottom */
   }
   #hero-856 .cs-container {
     display: flex;
@@ -685,10 +682,6 @@
     color: #fff;
   }
 }
-.spacer {
-  padding: 7.5em 0;
-}
-
 #calendar {
   position: relative;
   overflow: hidden;
