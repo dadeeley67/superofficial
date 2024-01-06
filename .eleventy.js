@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/js");
 
     // Other required folders are passed through
-    eleventyConfig.addPassthroughCopy("./src/admin");
+    // eleventyConfig.addPassthroughCopy("./src/admin");
     eleventyConfig.addPassthroughCopy("./src/_redirects");
     eleventyConfig.addPassthroughCopy({ "./src/robots.txt": "/robots.txt" });
     // END PASSTHROUGHS
