@@ -5,7 +5,7 @@ preloadImg: ''
 permalink: 'parties/'
 eleventyNavigation:
     key: our parties
-    order: 300
+    order: 200
 ---
 
 {% extends "layouts/base.html" %}
@@ -15,6 +15,10 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
+
+    <div class="spacer"></div>
+
+    {% include 'components/parties-scroller.html' %}
 
     <!-- ============================================ -->
     <!--                   Gallery                    -->

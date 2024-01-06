@@ -1,12 +1,1 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 4H18V44H1V4Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M18 25H47V44H18V25Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M33 25V44" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M22 32V36" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1 19H18" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M14 9V14" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M14 24V29" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M36 29H44" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M33 33H47" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M42 10L46 14V16H34V14L38 10V4H42V10Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-</svg>
+<svg fill="none" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><g stroke="#fff" stroke-miterlimit="10" stroke-width="2"><path d="m1 4h17v40h-17z"/><path d="m18 25h29v19h-29z"/><path d="m33 25v19"/><path d="m22 32v4"/><path d="m1 19h17"/><path d="m14 9v5"/><path d="m14 24v5"/><path d="m36 29h8"/><path d="m33 33h14"/><path d="m42 10 4 4v2h-12v-2l4-4v-6h4z"/></g></svg>

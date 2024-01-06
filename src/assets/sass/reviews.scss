@@ -14,7 +14,7 @@
 
 
         h1 {
-            margin: 4rem 0;
+            margin-bottom: 5rem;
         }
 
         .container {
@@ -99,8 +99,6 @@
 /* Tablet */
 @media only screen and (min-width: 48em) {
     #reviews {
-        padding-top: calc(150 / 16 * 1rem);
-        padding-bottom: calc(50 / 16 * 1rem);
 
         .container {
             display: flex;

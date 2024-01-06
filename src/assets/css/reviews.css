@@ -11,7 +11,7 @@
     text-align: center;
   }
   #reviews h1 {
-    margin: 4rem 0;
+    margin-bottom: 5rem;
   }
   #reviews .container {
     max-width: 82.5rem;
@@ -84,10 +84,6 @@
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
-  #reviews {
-    padding-top: 9.375rem;
-    padding-bottom: 3.125rem;
-  }
   #reviews .container {
     display: flex;
     justify-content: center;

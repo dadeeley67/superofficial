@@ -5,7 +5,7 @@ preloadImg: ''
 permalink: 'calendar/'
 eleventyNavigation:
     key: calendar
-    order: 500
+    order: 400
 ---
 
 {% extends "layouts/base.html" %}
@@ -16,6 +16,10 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
+
+    <div class="spacer"></div>
+
+    {% include 'components/events-scroller.html' %}
 
     <!-- ============================================ -->
     <!--                  Calendar                    -->

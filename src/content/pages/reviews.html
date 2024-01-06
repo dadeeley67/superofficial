@@ -5,7 +5,7 @@ preloadImg: ''
 permalink: 'reviews/'
 eleventyNavigation:
     key: reviews
-    order: 400
+    order: 300
 ---
 
 {% extends "layouts/base.html" %}
@@ -15,6 +15,10 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
+
+    <div class="spacer"></div>
+
+    {% include 'components/reviews-scroller.html' %}
 
     <!-- ============================================ -->
     <!--                  Reviews                     -->

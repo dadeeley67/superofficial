@@ -6,7 +6,6 @@
 @media only screen and (min-width: 0em) {
   #gallery {
     position: relative;
-    margin-top: 8rem;
     /* Prevents overflow from the image going off screen */
     overflow: hidden;
     padding: var(--sectionPadding);

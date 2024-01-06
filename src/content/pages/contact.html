@@ -1,30 +1,25 @@
 ---
 title: 'Contact'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+preloadImg: ''
 permalink: 'contact/'
+eleventyNavigation:
+    key: contact
+    order: 500
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="/assets/css/scrollers.css">
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+    <div class="spacer"></div>
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+    {% include 'components/contact-scroller.html' %}
 
     <!-- ============================================ -->
     <!--                Contact Form                  -->
@@ -34,10 +29,10 @@ permalink: 'contact/'
         <div class="cs-container">
             <form id="cs-form" name="Contact Form" method="post">
                 <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
+                    {# <span class="cs-topper">Contact</span> #}
+                    <h2 class="cs-title">get in touch</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        maybe you want to have us cater a private event, maybe you want to rent out our shop for a private event. maybe you just want to say hi. this is the place to do it.
                     </p>
                 </div>
                 <label>
@@ -73,22 +68,15 @@ permalink: 'contact/'
                 <span class="cs-header">Address</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
                     {{client.address.lineOne}},
-                    <br />
+                    <br/>
                     {{client.address.lineTwo}},
-                    <br />
+                    <br/>
                     <span class="cs-block">
                         {{client.address.city}}
                         {{client.address.state}}
                         {{client.address.zip}}
                     </span>
                 </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
             </div>
         </div>
     </section>
