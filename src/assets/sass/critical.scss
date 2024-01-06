@@ -316,11 +316,13 @@
 
     #banner,
     #specials-banner,
-    #events-banner {
+    #events-banner,
+    #parties-banner,
+    #reviews-banner {
         z-index: 2;
         position: -webkit-sticky;
         position: sticky;
-        top: 121.36px;
+        top: 121.7px;
     }
 
     #banner {
@@ -329,9 +331,8 @@
         }
     }
 
-    #specials-banner {
-        margin-bottom: 8em;
-
+    #specials-banner,
+    #parties-banner {
         .scroll-banner {
             background-color: var(--primary);
 
@@ -347,9 +348,8 @@
         }
     }
 
-    #events-banner {
-        margin: 4em 0;
-
+    #events-banner,
+    #reviews-banner {
         .scroll-banner {
             background-color: #8dcac6;
         }
@@ -386,11 +386,25 @@
 
     #banner,
     #specials-banner,
-    #events-banner {
+    #events-banner,
+    #parties-banner,
+    #reviews-banner {
         top: 6rem;
     }
 }
 
 #spacer {
     padding: 7.5em 0;
+}
+
+#calendar {
+    position: relative;
+    margin-top: 8rem;
+    overflow: hidden;
+    padding: var(--sectionPadding);
+    text-align: center;
+
+    h1 {
+        margin-bottom: 2em;
+    }
 }

@@ -688,33 +688,33 @@
 @media only screen and (min-width: 0em) {
   #banner,
   #specials-banner,
-  #events-banner {
+  #events-banner,
+  #parties-banner,
+  #reviews-banner {
     z-index: 2;
     position: -webkit-sticky;
     position: sticky;
-    top: 121.36px;
+    top: 121.7px;
   }
   #banner .scroll-banner {
     background-color: #8dcac6;
   }
-  #specials-banner {
-    margin-bottom: 8em;
-  }
-  #specials-banner .scroll-banner {
+  #specials-banner .scroll-banner,
+  #parties-banner .scroll-banner {
     background-color: var(--primary);
   }
-  #specials-banner .scroll-banner .scroll-content {
+  #specials-banner .scroll-banner .scroll-content,
+  #parties-banner .scroll-banner .scroll-content {
     animation: scroll1reverse var(--time) linear infinite;
     animation-delay: calc(var(--time) * -1);
   }
-  #specials-banner .scroll-banner .scroll-content:nth-child(2) {
+  #specials-banner .scroll-banner .scroll-content:nth-child(2),
+  #parties-banner .scroll-banner .scroll-content:nth-child(2) {
     animation: scroll2reverse var(--time) linear infinite;
     animation-delay: calc(var(--time) / -2);
   }
-  #events-banner {
-    margin: 4em 0;
-  }
-  #events-banner .scroll-banner {
+  #events-banner .scroll-banner,
+  #reviews-banner .scroll-banner {
     background-color: #8dcac6;
   }
   .scroll-banner {
@@ -743,12 +743,25 @@
 @media only screen and (min-width: 1024px) {
   #banner,
   #specials-banner,
-  #events-banner {
+  #events-banner,
+  #parties-banner,
+  #reviews-banner {
     top: 6rem;
   }
 }
 #spacer {
   padding: 7.5em 0;
+}
+
+#calendar {
+  position: relative;
+  margin-top: 8rem;
+  overflow: hidden;
+  padding: var(--sectionPadding);
+  text-align: center;
+}
+#calendar h1 {
+  margin-bottom: 2em;
 }
 
 /*# sourceMappingURL=critical.css.map */

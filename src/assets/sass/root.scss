@@ -1488,12 +1488,12 @@
                         margin-bottom: calc(12 / 16 * 1rem);
                         list-style: none;
                         font-size: calc(18 / 16 * 1rem);
-                        color: #fff;
+                        color: #000;
 
                         a {
                             text-decoration: none;
                             line-height: calc(21 / 18 * 1em);
-                            color: #fff;
+                            color: #000;
                             transition: color 0.3s;
 
                             &:hover {
@@ -1509,7 +1509,7 @@
                         font-size: calc(18 / 16 * 1rem);
                         line-height: calc(21 / 18 * 1em);
                         font-weight: bold;
-                        color: #fff;
+                        color: #000;
 
                         &:before {
                             position: absolute;
@@ -1671,7 +1671,7 @@
 
 // Specials styles
 #specials {
-    padding: 1rem 1rem;
+    padding: 5rem 1rem;
 
     .button-section {
         display: flex;

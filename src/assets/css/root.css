@@ -1640,12 +1640,12 @@
     margin-bottom: 0.75rem;
     list-style: none;
     font-size: 1.125rem;
-    color: #fff;
+    color: #000;
   }
   #footer .right-section .lists ul li a {
     text-decoration: none;
     line-height: 1.1666666667em;
-    color: #fff;
+    color: #000;
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
@@ -1658,7 +1658,7 @@
     font-size: 1.125rem;
     line-height: 1.1666666667em;
     font-weight: bold;
-    color: #fff;
+    color: #000;
   }
   #footer .right-section .lists ul h2:before {
     position: absolute;
@@ -1780,7 +1780,7 @@
   }
 }
 #specials {
-  padding: 1rem 1rem;
+  padding: 5rem 1rem;
 }
 #specials .button-section {
   display: flex;
