@@ -1357,35 +1357,35 @@
                 animation: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 reverse both running shadow-pop-br-out;
                 text-align: center;
             }
-    
+
             .button.shadow-pop-br:hover {
                 animation: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1 normal both running shadow-pop-br-in;
             }
-    
+
             #special1 {
                 background-image: url("/assets/images/specials/winter_pt_1/opt/Peppermint_Mocha.webp");
             }
-    
+
             #special2 {
-                background-image: url("/assets/images/specials/winter_pt_1/opt/Chocolate_Orange.webp");
+                background-image: url("/assets/images/specials/winter_pt2/opt/Mexican_Hot_Chocolate_2024.webp");
             }
-    
+
             #special3 {
                 background-image: url("/assets/images/specials/winter_pt_1/opt/Toasted_Marshmallow_Match.webp");
             }
-    
+
             #special4 {
-                background-image: url("/assets/images/specials/winter_pt_1/opt/Nutcracker_Firecracker.webp");
+                background-image: url("/assets/images/specials/winter_pt2/opt/Zombie_Strawberry_Shortcake.webp");
             }
-    
-            #special5 {
-                background-image: url("/assets/images/specials/winter_pt_1/opt/Cranberry_Cookie_Square.webp");
-            }
-    
+
+            // #special5 {
+            //     background-image: url("/assets/images/specials/winter_pt_1/opt/Cranberry_Cookie_Square.webp");
+            // }
+
             #special6 {
                 background-image: url("/assets/images/specials/winter_pt_1/opt/Brown_Cardigan_2023.webp");
             }
-    
+
             #special1,
             #special2,
             #special3,
@@ -1394,11 +1394,11 @@
             #special6 {
                 transition: .3s ease-in-out;
                 transition-property: background-color;
-    
+
                 &:hover {
                     background-image: none;
                     background-color: beige;
-    
+
                     p,
                     a {
                         display: inline-block;
@@ -1410,7 +1410,7 @@
                 display: none;
                 padding: 1em;
             }
-    
+
             .button a {
                 display: none;
                 border: 1px solid #000;
