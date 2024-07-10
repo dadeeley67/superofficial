@@ -1608,5 +1608,10 @@
   animation-timeline: view();
   animation-range: 150px 350px;
 }
+#calendar .cs-title {
+  margin-bottom: 2.5rem;
+  max-width: 38.8125rem;
+  text-align: center;
+}
 
 /*# sourceMappingURL=root.css.map */

@@ -1433,4 +1433,9 @@
         animation-timeline: view();
         animation-range: 150px 350px;
     }
+    .cs-title {
+        margin-bottom: calc(40 / 16 * 1rem);
+        max-width: calc(621 / 16 * 1rem);
+        text-align: center;
+    }
 }

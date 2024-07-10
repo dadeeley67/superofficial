@@ -7,6 +7,8 @@ const activeLink = document.querySelector(".cs-active");
 
 var containerRect = CSnavbarMenu.getBoundingClientRect();
 
+const icalURL = "https://calendar.google.com/calendar/ical/c_54aab630f7ebbdd6529850100aaff2a161c4705a6da6586c593242078ff50a8f%40group.calendar.google.com/public/basic.ics";
+
 CShamburgerMenu.addEventListener('click', function () {
 	CShamburgerMenu.classList.toggle("cs-active");
 	CSnavbarMenu.classList.toggle("cs-active");
@@ -97,3 +99,16 @@ for (const item of dropDowns) {
 	}
 	item.addEventListener('click', onClick)
 }
+
+const copyiCalURL = () => {
+	navigator.clipboard.writeText(icalURL).then(() => {
+		console.log('Text copied to clipboard');
+		}).catch(err => {
+		console.error('Failed to copy text: ', err);
+		});
+};
+
+// Add event listener to the button
+document.getElementById('copyButton').addEventListener('click', () => {
+	copyiCalURL();
+});

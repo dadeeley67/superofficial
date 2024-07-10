@@ -47,14 +47,13 @@
   }
 }
 #brand-banner,
-#parties-banner
- {
+#events-banner,
+#reviews-banner {
   background-color: var(--secondary);
 }
 
 #specials-banner,
-#events-banner,
-#reviews-banner {
+#parties-banner {
   background-color: var(--primary);
 }
 
